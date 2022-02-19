@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Portfolio of Yentl Hendrickx, IT student at Thomas More Geel" />
         <meta name="author" content="Yentl Hendrickx" />
-        <title>Yentl Hendrickx</title>
+        <title>Portfiolio Yentl Hendrickx</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
@@ -23,87 +24,144 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-white" href="#page-top">Portfolio</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-secondary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#page-top">Home</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#about">About Me</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-white" href="#contact">Contact</a></li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block"></span>
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="#page-top" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-light text-white text-center mb-0 pt-0">
+        
+        <header class="bg-light text-white text-center mb-0 pt-0">
             <div class="container d-flex align-items-center flex-column">
                 <img class="header-avatar" src="assets/img/avataaars.svg" alt="..." />
                 <h1 class="header-title text-uppercase mb-0">Yentl Hendrickx</h1>
                 <p class="header-subtitle font-weight-light mb-3">Student - Programmer</p>
             </div>
         </header>
+
         <section class="page-section portfolio bg-dark pt-1" id="about">
             <div class="container">
-                <div class="container">
-                    <h2 class="subtitle text-center text-white text-uppercase">About Me</h2>
+               
+                <h2 class="subtitle text-center text-white text-uppercase">About Me</h2>
+                <hr class="dark-hr"/>
 
-                    <hr/>
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead text-white">Lorem ipsum dolor sit amet.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead text-white">Lorem ipsum dolor sit amet.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead text-white">Lorem ipsum dolor sit amet.</p></div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="row">
-                        <div class="col-lg-4 ms-auto"><p class="lead text-white">Lorem ipsum dolor sit amet.</p></div>
-                        <div class="col-lg-4 me-auto"><p class="lead text-white">Lorem ipsum dolor sit amet.</p></div>
+        <section class="page-section bg-light text-dark mb-0" id="projects">
+            <div class="container">
+                <h2 class="subtitle text-center text-uppercase text-dark mt-0 pt-3">Projects</h2>
+                <hr/>
+                <div class="justify-content-center row">
+                    <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
+                        <div class="card">
+                            <img src="assets/tweetfrequency.png" alt="Tweet Frequency" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Powershell Twitter Scraper</h5>
+                                <p class="card-text">A Twitter scraper written in PowerShell that scrapes specific handles (@) and returns a graph of the tweet frequency.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
+                        <div class="card">
+                            <img src="assets/cryptotracker.png" alt="Crypto Tracker" class="card-img-top position-relative"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Crypto Tracker APP</h5>
+                                <p class="card-text">A Crypto Currency tracking APP for Android written in JavaScript using cordova.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
+                        <div class="card">
+                            <img src="..." alt="..." class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Requirements Analysis Project</h5>
+                                <p class="card-text">A group project for our Requirements Analysis class, creating a data model and prototypes.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
+                        <div class="card">
+                            <img src="..." alt="..." class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Minesweeper Solver</h5>
+                                <p class="card-text">A simple Minesweeper Solver written in entirely in Java.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
+                        <div class="card">
+                            <img src="..." alt="..." class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Beehive Monitor</h5>
+                                <p class="card-text">A group project for monitoring beehives using a RaspberryPI, Bluetooth and a custom Android application.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">More info</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="page-section bg-light text-dark mb-0" id="portfolio">
-            <h2 class="subtitle text-center text-uppercase text-dark mt-0 pt-3">Portfolio</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-5">
-                    
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                   
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                   
-                </div>
-            </div>
-        </section>
-        <section class="page-section bg-dark" id="contact">
-            <div class="container">
-                <h2 class="page-section-heading text-center text-uppercase text-white mt-0 pt-3">Contact</h2>
-                <hr/>
-                
-                
-            </div>
-        </section>
-        <footer class="footer text-center">
+
+        <footer class="page-footer bg-dark text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 mb-1 mb-lg-0 mt-0 pt-3">
-                        <h4 class="text-uppercase mb-4">Socials</h4>
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://twitter.com/hendrickx_yentl"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://www.linkedin.com/in/yentl-hendrickx-3a3533223/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://github.com/YentlHendrickx"><i class="fab fa-fw fa-github"></i></a>
+                    <div class="col-12 row">
+                        <div class="mt-3 col-12 col-md-6">
+                            <h2 class="text-uppercase text-white" id="contact">Contact</h4>
+                            <div class="col-12 row">
+                                <a class="mail btn col-12" href="mailto:yentlhenrickx@outlook.com"><i class="fas fa-envelope footer-link"></i>yentlhendrickx@outlook.com</a>
+                                <a class="mail btn col-12" href="tel:+32484473436"><i class="fas fa-phone footer-link"></i>+32&nbsp;484&nbsp;47&nbsp;34&nbsp;36</a>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-12 col-md-6">
+                            <h2 class="text-uppercase text-white">Socials</h2>
+                            <div class="col-12 row">
+                                <a class="btn btn-social col-6 col-md-4" href="https://twitter.com/hendrickx_yentl"><i class="fab fa-fw fa-twitter footer-link"></i>Twitter</a>
+                                <a class="btn btn-social col-6 col-md-4" href="https://www.linkedin.com/in/yentl-hendrickx-3a3533223/"><i class="fab fa-fw fa-linkedin-in footer-link"></i>LinkedIn</a>
+                                <a class="btn btn-social col-12 col-md-4" href="https://github.com/YentlHendrickx"><i class="fab fa-fw fa-github footer-link"></i>GitHub</a>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
+            <div class="footer-copyright py-4 text-center text-white">
+                <div class="container"><small>Copyright &copy; Yentl Hendrickx</small></div>
+            </div>
         </footer>
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Yentl Hendrickx</small></div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
