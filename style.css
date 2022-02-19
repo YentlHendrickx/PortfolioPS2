@@ -108,3 +108,12 @@
     color: white;
     text-decoration: none;
 }
+
+.cryptoImages {
+    max-height: 500px;
+    width: auto;
+}
+
+.req-images {
+    max-width: 75%;
+}

@@ -8,9 +8,17 @@
         <meta name="author" content="Yentl Hendrickx" />
         <title>Portfiolio Yentl Hendrickx</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
 
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
@@ -24,7 +32,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark main">
             <div class="d-flex flex-grow-1">
                 <span class="w-100 d-lg-none d-block"></span>
                 <a class="navbar-brand" href="#">Portfolio</a>
@@ -37,10 +45,7 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar">
                 <ul class="navbar-nav ml-auto flex-nowrap">
                     <li class="nav-item">
-                        <a href="#page-top" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About Me</a>
+                        <a href="#about" class="active nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a href="#resume" class="nav-link">Resume</a>
@@ -55,7 +60,7 @@
             </div>
         </nav>
         
-        <header class="bg-light text-white text-center mb-0 pt-0">
+        <header class="bg-light text-white text-center mb-0 pt-0 main">
             <div class="container d-flex align-items-center flex-column">
                 <img class="header-avatar" src="assets/me.jpg" alt="Yentl Hendrickx" />
                 <h1 class="header-title text-uppercase mb-0">Yentl Hendrickx</h1>
@@ -63,7 +68,7 @@
             </div>
         </header>
 
-        <section class="page-section portfolio bg-dark pt-1" id="cv">
+        <section class="page-section portfolio bg-dark pt-1 main" id="cv">
             <div class="container">
                
                 <h2 class="subtitle text-center text-white text-uppercase">About Me</h2>
@@ -85,14 +90,14 @@
                 <div class="row">
                     <div class="col-12 ms-auto">
                         <p class="lead text-white text-center">
-                            Download my Resume: <a class="resume" href=""><i class="fas fa-file"></i> Resume.pdf</a>
+                            Download my Resume: <a class="resume" href="/assets/Resume.pdf" download><i class="fas fa-file"></i> Resume_Yentl.pdf</a>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="page-section bg-light text-dark mb-0" id="projects">
+        <section class="page-section bg-light text-dark mb-0 main" id="projects">
             <div class="container">
                 <h2 class="subtitle text-center text-uppercase text-dark mt-0 pt-3">Projects</h2>
                 <hr/>
@@ -100,7 +105,7 @@
                     <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
                         <div class="card">
                             <div class="position-absolute img-cont">
-                                <a href="#" class="more-info position-relative">More Info</a>
+                                <a href="#" class="more-info position-relative" id="powershell">More Info</a>
                             </div>
                             <img src="assets/tweetfrequency.png" alt="Tweet Frequency" class="card-img-top">
 
@@ -113,7 +118,7 @@
                     <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
                         <div class="card">
                             <div class="position-absolute img-cont">
-                                <a href="#" class="more-info position-relative">More Info</a>
+                                <a href="#" class="more-info position-relative" id="cryptotracker">More Info</a>
                             </div>
                             <img src="assets/cryptotracker.png" alt="Crypto Tracker" class="card-img-top"/>
                             <div class="card-body">
@@ -125,7 +130,7 @@
                     <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
                         <div class="card">
                             <div class="position-absolute img-cont">
-                                <a href="#" class="more-info position-relative">More Info</a>
+                                <a href="#" class="more-info position-relative" id="requirements">More Info</a>
                             </div>
                             <img src="assets/reqAnalysis.png" alt="Requirements Analysis" class="card-img-top">
                             <div class="card-body">
@@ -137,7 +142,7 @@
                     <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
                         <div class="card">
                             <div class="position-absolute img-cont">
-                                <a href="#" class="more-info position-relative">More Info</a>
+                                <a href="#" class="more-info position-relative" id="minesweeper">More Info</a>
                             </div>
                             <img src="assets/minesweeper.png" alt="Minesweeper AI" class="card-img-top">
                             <div class="card-body">
@@ -147,20 +152,153 @@
                             
                         </div>
                     </div>
-                    <div class="mx-5 mx-md-auto col-md-6 col-lg-4 mb-5 d-md-flex">
-                        <div class="card">
-                            <div class="position-absolute img-cont">
-                                <a href="#" class="more-info position-relative">More Info</a>
-                            </div>
-                            <img src="assets/rpibeehive.png" alt="Beehive Monitor" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Beehive Monitor</h5>
-                                <p class="card-text">A group project for monitoring beehives using a RaspberryPI, Bluetooth and a custom Android application.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
+        </section>
+
+
+        <!-- Shared Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shared">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block"></span>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="#return" class="active nav-link" id="return">Back to Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pt-5"></div>
+        
+
+        <section id="powershell">
+            <div class="container">
+                <h2 class="subtitle text-center text-black text-uppercase">Powershell Tweets</h2>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-12 ms-auto">
+                        <p class="lead">As a case study for the Windows System Administration course at Thomas More, I created a PowerShell Script that will output the tweet frequency for a specific handle (@).</p>
+                        <p class="lead">It's entirely written in PowerShell and makes use of the Twitter API in order to fetch the tweets.</p>
+
+                        <figure>
+                            <img class="img-fluid"src="assets/tweetfrequency.png" alt="Tweet frequency">
+                            <figcaption class="font-italic">Last 50 Tweets from user @elonmusk.</figcaption>
+                        </figure>
+
+                        <p class="lead">A user can input the handle (@) followed by the number of Tweets to fetch and above graph will be displayed.</p>
+                        
+                        <h3 class="text-center">Demonstration (Dutch)</h3>
+                        <iframe class="mb-3"width="100%" height="500"
+                            src="https://www.youtube.com/embed/qEyXLapWmZ4">
+                        </iframe>
+                       
+                    </div>
+                </div>
+        </section>
+
+        <section id="cryptotracker">
+            <div class="container">
+                <h2 class="subtitle text-center text-black text-uppercase">Cryptocurrency Tracker</h2>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-12 ms-auto">
+                        <p class="lead">As a case study for the Cordova course at Thomas More, I created an Android application that allows you to monitor (track) cryptocurrencies.</p>
+                        <p class="lead">The entire APP is written using HTML, CSS and JavaScript. I used the CoinGecko Cryptocurrency API to make it all work.</p>
+                        
+                        <figure class="row">
+                            <div class="col-6 col-md-4">
+                                <img class="img-fluid cryptoImages" src="assets/cryptoOverview.png" alt="Overview">
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <img class="img-fluid cryptoImages" src="assets/cryptoSearch.png" alt="Search">
+                            </div>
+                            <div class="col-6 offset-3 offset-md-0 col-md-4 mt-2 mt-md-0">
+                                <img class="img-fluid cryptoImages" src="assets/cryptoFavorites.png" alt="Favorites">
+                            </div>
+                    
+                            <figcaption class="font-italic col-12">Different screenshots of the APP.</figcaption>
+                        </figure>
+
+                        <p class="lead">Some of the main features include:
+                            <ul class="lead">
+                                <li>Adding currencies to favorites</li>
+                                <li>Searching for specific currencies</li>
+                                <li>Sharing some cool info about that currency</li>
+                            </ul>
+                        </p>
+                        
+                        <h3 class="text-center">More info</h3>
+                        <hr/>
+                        <p class="lead"> More info can be found on this page: <a href="https://cryptotracker.sinners.be/">cryptotracker.sinners.be</a></p>
+                       
+                    </div>
+                </div>
+        </section>
+
+        <section id="requirements">
+            <div class="container">
+                <h2 class="subtitle text-center text-black text-uppercase">Requirements Analysis</h2>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-12 ms-auto">
+                        <p class="lead">For our Requirements Analysis course we had to create an ERD an protoypes for a specifc web application.</p>
+                        <p class="lead">The project was done in teams of 6 and spread out over the course of a week. During which we developed a complete ERD, and made protypes for the final application.</p>
+                        <p class="lead">Our team was tasked with working out the logistics (and eventually programming) an application for people suffering from Alzheimers.</p>
+                        
+                        <figure>
+                            <img class="img-fluid req-images" src="assets/reqAnalysis.png" alt="ERD">
+                            <figcaption class="font-italic col-12">Our final ERD.</figcaption>
+                        </figure>
+
+                        <p class="lead">The project week eventually concluded with a jury presentation at which we had to show and explain our solution for the application.</p>
+
+                        <figure>
+                            <img class="img-fluid req-images" src="assets/reqAnalysis2.png" alt="Prototype">
+                            <figcaption class="font-italic col-12">One of our many prototype screens.</figcaption>
+                        </figure>           
+                    </div>
+                </div>
+        </section>
+
+        <section id="minesweeper">
+            <div class="container">
+                <h2 class="subtitle text-center text-black text-uppercase">Minesweeper Solver</h2>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-12 ms-auto">
+                        <p class="lead">I've always been really interested in challenging myself when it comes to programming, that's why I decided to write a Minesweeper Solver using Java.</p>
+                        <p class="lead">The solver takes a screenshot after which it starts to figure out the positioning of the board, makes an initial random guess and then tries to solve the entire thing.</p>
+                        <p class="lead">The solver was entirely written in Java and manages to solve the grids most of the time.</p>
+                        
+                        <figure>
+                            <img class="img-fluid req-images" src="assets/minesweeper.png" alt="Sweeper in action">
+                            <figcaption class="font-italic col-12">The sweeper having succesfuly completed a game in 11 seconds.</figcaption>
+                        </figure>
+
+                       <p class="lead">This project was quite challenging since I first had to figure out a way to calculate the position of the board on the screen and how big the grid is (in terms of squares).</p>
+                        <p class="lead">After figuring out the board position the solver will click the center square and the game starts!</p>
+
+                        <h3 class="text-center">Source Code</h3>
+                        <hr/>
+                        <p class="lead">
+                            Take a closer look at the solvers source code here: <a href="https://github.com/YentlHendrickx/MinesweeperAI">Github</a>
+                        </p>
+                        
+
+                        <h3 class="text-center">Demonstration</h3>
+                        <p class="lead">Unfortunately like mentioned before 100% solvability in Minesweeper is not a guarantee, sometimes it comes down to a 50/50 guess just like in this example.</p>
+                        <iframe class="mb-3"width="100%" height="500"
+                            src="https://www.youtube.com/embed/Xdl5DMS1crw">
+                        </iframe>       
+                    </div>
+                </div>
         </section>
 
         <footer class="page-footer bg-dark text-center">
@@ -180,7 +318,7 @@
                                 <a class="btn btn-social col-6 col-md-6" href="https://twitter.com/hendrickx_yentl"><i class="fab fa-fw fa-twitter footer-link"></i>Twitter</a>
                                 <a class="btn btn-social col-6 col-md-6" href="https://www.linkedin.com/in/yentl-hendrickx-3a3533223/"><i class="fab fa-fw fa-linkedin-in footer-link"></i>LinkedIn</a>
                                 <a class="btn btn-social col-12 col-md-6" href="https://github.com/YentlHendrickx"><i class="fab fa-fw fa-github footer-link"></i>GitHub</a>
-                                <a class="btn btn-social col-12 col-md-6" href=""><i class="fas fa-file"></i> Resume.pdf</a>
+                                <a class="btn btn-social col-12 col-md-6" href="/assets/Resume.pdf" download><i class="fas fa-file"></i> Resume.pdf</a>
                             </div>
                         </div>  
                     </div>
@@ -194,5 +332,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
