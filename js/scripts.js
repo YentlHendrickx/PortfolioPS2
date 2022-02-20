@@ -5,11 +5,11 @@ $(document).ready(function () {
 
     $('.more-info').click(function(event){
         event.preventDefault();
-        console.log("TEST");
         let id = $(this).attr('id');
         console.log(id);
 
         if (id != undefined) {
+            $('.navbar-collapse').collapse('hide');
             $('.main').hide();
             $('.shared').show();
             $('section#' + id).show();
@@ -22,6 +22,6 @@ $(document).ready(function () {
         $('.main').show();
         $('.shared').hide();
         $('section:not(.main)').hide();
-        window.scrollTo(0,0);
+        $('.navbar-collapse').collapse('hide');
     });
 });
