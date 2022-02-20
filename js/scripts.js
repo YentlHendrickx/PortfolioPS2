@@ -20,6 +20,7 @@ $(document).ready(function () {
     $('#return').click(function(event){
         event.preventDefault();
         $('.main').show();
+        $('.shared').hide();
         $('section:not(.main)').hide();
         window.scrollTo(0,0);
     });
